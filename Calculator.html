@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <style>
+      body {
+        background-color: #a8bf7e;
+      }
+
+      .container {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 7px;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+        background-color: #a0d0ea;
+        width: 25rem;
+        padding: 20px;
+        margin-left: 550px;
+        margin-top: 150px;
+      }
+
+      .Numz {
+        background-color: #efefef;
+        padding: 15px 20px;
+        text-align: center;
+        font-family: fantasy;
+        font-size: 25px;
+        box-shadow: 0px 2px 4px gray;
+      }
+
+      .sympolz {
+        background-color: #efff93;
+        padding: 15px 20px;
+        text-align: center;
+        font-family: fantasy;
+        font-size: 25px;
+        box-shadow: 0px 3px 4px gray;
+      }
+
+      .screen {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column: 1/-1;
+        background-color: #eeefe8;
+        height: 10vh;
+        margin-bottom: 5px;
+        box-shadow: 0px 2px 4px gray;
+      }
+
+      .C {
+        background-color: #fe9fa9;
+        padding: 15px 20px;
+        text-align: center;
+        font-family: fantasy;
+        font-size: 25px;
+        box-shadow: 0px 2px 4px gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen"></div>
+      <div class="Numz">1</div>
+      <div class="Numz">2</div>
+      <div class="Numz">3</div>
+      <div class="sympolz">+</div>
+      <div class="Numz">4</div>
+      <div class="Numz">5</div>
+      <div class="Numz">6</div>
+      <div class="sympolz">-</div>
+      <div class="Numz">7</div>
+      <div class="Numz">8</div>
+      <div class="Numz">9</div>
+      <div class="sympolz">*</div>
+      <div class="C">C</div>
+      <div class="Numz">0</div>
+      <div class="sympolz">=</div>
+      <div class="sympolz">/</div>
+    </div>
+  </body>
+</html>
